@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #99e9f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-size: 2.4rem;
+  margin-top: 2rem;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.first_grid_item {
+  margin-top: 8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container {
+  width: 500px;
+  margin: auto;
+  font-size: 2rem;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  font-size: 1.8rem;
+}
+
+.input_box {
+  border-radius: 2rem;
+  background-color: #ffdeeb;
+  padding: 0.5rem 2rem;
+}
+
+.input_box-2 {
+  border-radius: 2rem;
+}
+
+.image {
+  width: 17rem;
+}
+
+.gender {
+  width: 17rem;
+}
+.skills {
+  width: 17rem;
+}
+
+.submit {
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 5rem;
+  font-size: 1.8rem;
+}
+
+.grid_item-1 {
+  justify-self: center;
+}
+.grid_item-2 {
+  justify-items: end;
+}
+
+.btn-1 {
+  margin-right: 8rem;
+}
+
+.btn {
+  margin-top: 4rem;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  background-color: pink;
+}
+.btn-2 {
+  margin-right: 10rem;
+}
+
+@media (max-width: 550px) {
+  .flex-box {
+    justify-content: center;
+    gap: 5rem;
+    font-size: 1.8rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 950px) {
+  .grid-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .details {
+    margin-left: 25%;
   }
 }
